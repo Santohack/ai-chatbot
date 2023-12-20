@@ -6,6 +6,17 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
+}
+
+model note {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  content   String?
+  userId    String
+  creatAt   DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("notes")
 }
