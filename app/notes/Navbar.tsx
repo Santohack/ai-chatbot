@@ -1,13 +1,19 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../public/logo.png'
 import { UserButton } from '@clerk/nextjs'
 import { Button } from '@/components/ui/button'
 import { PlusIcon } from 'lucide-react'
+import AddNoteDialogButton from '@/components/AddNoteDialogButton'
+import ThemeToggleButton from '@/components/ThemeToggleButton'
 
 const Navbar = () => {
+  const [showAddNoteDialog,setShowAddNoteDialog] = useState(false)
     return (
+      <>
+   
         <div className='p-4 shadow'>
             <div className='max-w-7xl mx-auto flex flex-wrap gap-3 items-center justify-between'>
                 <Link href={"/notes"} className='flex items-center gap-1'>
@@ -25,13 +31,16 @@ const Navbar = () => {
                 },
               }}
               />
-              <Button>
+              <ThemeToggleButton />
+              <Button onClick={()=>setShowAddNoteDialog(true)}>
                 <PlusIcon size={20} className='mr-2' />
                 Add Note
               </Button>
               </div>
             </div>
         </div>
+        <AddNoteDialogButton open = {showAddNoteDialog} setOpen={setShowAddNoteDialog}/>
+        </>
     )
 }
 
