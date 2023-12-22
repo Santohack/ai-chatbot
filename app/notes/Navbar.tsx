@@ -8,9 +8,11 @@ import { Button } from '@/components/ui/button'
 import { PlusIcon } from 'lucide-react'
 import AddNoteDialogButton from '@/components/AddNoteDialogButton'
 import ThemeToggleButton from '@/components/ThemeToggleButton'
-
+import {dark} from '@clerk/themes'
+import { useTheme } from 'next-themes'
 const Navbar = () => {
   const [showAddNoteDialog,setShowAddNoteDialog] = useState(false)
+  const {theme} = useTheme()
     return (
       <>
    
@@ -23,6 +25,7 @@ const Navbar = () => {
               <div className='flex items-center gap-2'>
               <UserButton afterSignOutUrl="/"
               appearance={{
+                baseTheme: theme === 'dark' ? dark : undefined,
                 elements: {
                   avatarBox: {
                     width: "2.5rem",
