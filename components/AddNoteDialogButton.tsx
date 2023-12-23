@@ -152,6 +152,7 @@ if(!response.ok) throw new Error('Failed to update note')
                   variant={'destructive'}
                   disabled={form.formState.isSubmitting}
                   type='button'
+                  loading={deleteLoading}
                   onClick={deleteNote}
                   >
                     Delete Note

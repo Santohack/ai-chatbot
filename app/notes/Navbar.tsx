@@ -10,6 +10,7 @@ import AddNoteDialogButton from '@/components/AddNoteDialogButton'
 import ThemeToggleButton from '@/components/ThemeToggleButton'
 import {dark} from '@clerk/themes'
 import { useTheme } from 'next-themes'
+import AIChatButton from '@/components/AIChatButton'
 const Navbar = () => {
   const [showAddNoteDialog,setShowAddNoteDialog] = useState(false)
   const {theme} = useTheme()
@@ -39,10 +40,11 @@ const Navbar = () => {
                 <PlusIcon size={20} className='mr-2' />
                 Add Note
               </Button>
+              <AIChatButton />
               </div>
             </div>
         </div>
-        <AddNoteDialogButton open = {showAddNoteDialog} setOpen={setShowAddNoteDialog}/>
+        <AddNoteDialogButton noteEdit={undefined} open = {showAddNoteDialog} setOpen={setShowAddNoteDialog}/>
         </>
     )
 }
