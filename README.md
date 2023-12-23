@@ -1,14 +1,28 @@
 
 HomePage
+![Alt text](image-16.png)
 ![Alt text](screenshot/image.png)
+LoginPage
+![Alt text](image-17.png)
+![Alt text](screenshot/images.png)
+Sign up
+![Alt text](screenshot/image-18.png)
+![Alt text](screenshot/image-1.png)
 
-
-
-
-
-
-
-
+![Alt text](screenshot/image-2.png)
+![Alt text](screenshot/image-3.png)
+![Alt text](screenshot/image-4.png)
+![Alt text](screenshot/image-5.png)
+![Alt text](screenshot/image-6.png)
+![Alt text](screenshot/image-7.png)
+![Alt text](screenshot/image-8.png)
+![Alt text](screenshot/image-9.png)
+![Alt text](screenshot/image-10.png)
+![Alt text](screenshot/image-11.png)
+![Alt text](screenshot/image-12.png)
+![Alt text](screenshot/image-13.png)
+![Alt text](screenshot/image-14.png)!
+[Alt text](screenshot/image-15.png)
 
 
 
