@@ -1,9 +1,9 @@
 
 HomePage
-![Alt text](image-16.png)
+![Alt text](screenshot/image-16.png)
 ![Alt text](screenshot/image.png)
 LoginPage
-![Alt text](image-17.png)
+![Alt text](screenshot/image-17.png)
 ![Alt text](screenshot/images.png)
 Sign up
 ![Alt text](screenshot/image-18.png)
